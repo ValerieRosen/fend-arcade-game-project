@@ -27,6 +27,7 @@ var Engine = (function(global) {
 
 const modal = document.querySelector('.modal-bg');
 const replay = document.querySelector('.modal-button');
+const cancel = document.querySelector('.cancel');
 
 replay.addEventListener('click', function() {
     modal.classList.toggle('hide');
@@ -34,6 +35,10 @@ replay.addEventListener('click', function() {
     player.victory = false;
     win.requestAnimationFrame(main);
     location.reload();
+});
+
+cancel.addEventListener('click', function() {
+    modal.classList.toggle('hide');
 });
 
     canvas.width = 505;
