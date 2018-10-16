@@ -32,8 +32,6 @@ Enemy.prototype.render = function() {
 // a handleInput() method.
 class Hero {
     constructor() {
-        this.x = 0;
-        this.y = 0;
         this.sprite = 'images/char-boy.png';
         this.step = 101;
         this.jump = 83;
@@ -41,13 +39,20 @@ class Hero {
         this.startY = (this.jump * 4) + 55;
         this.x = this.startX;
         this.y = this.startY;
+        this.victory = false;
     }
         update() {
+            //Checking for collision
             for(let enemy of allEnemies) {
-                if (this.y === enemy.y) {
-                console.log('Same row!');
+
+                //Did hero x and y collide with enemy?
+                if (this.y === enemy.y && (enemy.x + enemy.step/2 > this.x && enemy.x < this.x + this.step/2)) {
+                this.reset();
             }
-            console.log(this.y, enemy.y);
+        }
+        
+        if(this.y === 55) {
+            this.victory = true;
         }
     }
 
@@ -72,7 +77,7 @@ class Hero {
                 }
                 break;
             case 'right':
-                if (this.x < this.step *4) {
+                if (this.x < this.step * 4) {
                     this.x += this.step;
                 }
                 break;
@@ -84,23 +89,22 @@ class Hero {
         }
 
     }
+    //Reset hero
+    reset() {
+    this.y = this.startY;
+    this.x = this.startX;
 }
-
-const player = new Hero();
-const bug1 = new Enemy(-101, 3, 200);
-const bug2 = new Enemy(-101, 83, 300);
-const bug3 = new Enemy((-101 * 2.5), 83, 300);
-const bug4 = new Enemy(-101, 169, 150);
-const bug5 = new Enemy(-101, 253, 250);
-const allEnemies = [];
-allEnemies.push(bug1, bug2, bug3, bug4, bug5);
-
+}
 
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies
 // Place the player object in a variable called player
-
-
+const player = new Hero();
+const bug1 = new Enemy(-101, 0, 150);
+const bug2 = new Enemy(-101, 83, 300);
+const bug3 = new Enemy((-101 * 2.5), 83, 225);
+const allEnemies = [];
+allEnemies.push(bug1, bug2, bug3);
 
 // This listens for key presses and sends the keys to your
 // Player.handleInput() method. You don't need to modify this.
