@@ -96,7 +96,7 @@ var Engine = (function(global) {
                this.x += 200 * dt;
            }
         });
-      //  player.update();
+        player.update();
     }
 
     /* This function initially draws the "game level", it will then call
