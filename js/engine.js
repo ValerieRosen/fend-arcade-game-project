@@ -91,9 +91,12 @@ var Engine = (function(global) {
      */
     function updateEntities(dt) {
         allEnemies.forEach(function(enemy) {
-            enemy.update(dt);
+           enemy.update(dt);
+           if (this.x < this.step * 5) {
+               this.x += 200 * dt;
+           }
         });
-        player.update();
+      //  player.update();
     }
 
     /* This function initially draws the "game level", it will then call
@@ -150,7 +153,7 @@ var Engine = (function(global) {
          * the render function you have defined.
          */
         allEnemies.forEach(function(enemy) {
-            enemy.render();
+           enemy.render();
         });
 
         player.render();
