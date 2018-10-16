@@ -33,6 +33,7 @@ replay.addEventListener('click', function() {
     player.reset();
     player.victory = false;
     win.requestAnimationFrame(main);
+    location.reload();
 });
 
     canvas.width = 505;
@@ -177,6 +178,7 @@ replay.addEventListener('click', function() {
      */
     function reset() {
         // noop
+        
     }
 
     /* Go ahead and load all of the images we know we're going to need to
