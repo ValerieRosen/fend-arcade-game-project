@@ -1,6 +1,11 @@
-frontend-nanodegree-arcade-game
-===============================
+#FEND Arcade Game
 
-Students should use this [rubric](https://review.udacity.com/#!/projects/2696458597/rubric) for self-checking their submission. Make sure the functions you write are **object-oriented** - either class functions (like Player and Enemy) or class prototype functions such as Enemy.prototype.checkCollisions, and that the keyword 'this' is used appropriately within your class and class prototype functions to refer to the object the function is called upon. Also be sure that the **readme.md** file is updated with your instructions on both how to 1. Run and 2. Play your arcade game.
+This game is a simple game that is made with object oriented JavaScript that allows the character to maneuver via arrow keys and 
 
-For detailed instructions on how to get started, check out this [guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
+##Dependencies
+
+Background images provided by [(http://www.subtlebackgrounds.com)]. Thanks to Matt Cranford for his guidance from his Walkthrough blog.
+
+###How To Play
+
+Using the four arrow keys on the keyboard, navigate the hero through the enemy bugs and reach the water to win the game. 
