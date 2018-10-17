@@ -101,6 +101,7 @@ cancel.addEventListener('click', function() {
      */
     function update(dt) {
         updateEntities(dt);
+        //checkCollisions();
     }
 
     /* This is called by the update function and loops through all of the

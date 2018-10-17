@@ -26,6 +26,10 @@ body {
     margin-top: 4rem;
 }
 
+.cancel {
+    margin-top: 4rem;
+}
+
 .hide {
     display: none;
 }
