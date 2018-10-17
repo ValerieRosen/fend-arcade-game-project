@@ -1,6 +1,6 @@
 # FEND Arcade Game
 
-This game is a simple game that is made with object oriented JavaScript.
+This game is a take on the classic Frogger arcade game that is made with object oriented JavaScript.
 
 ## Dependencies
 
