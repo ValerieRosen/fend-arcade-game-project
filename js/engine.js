@@ -184,7 +184,6 @@ cancel.addEventListener('click', function() {
      */
     function reset() {
         // noop
-        
     }
 
     /* Go ahead and load all of the images we know we're going to need to
