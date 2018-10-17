@@ -1,6 +1,6 @@
 # FEND Arcade Game
 
-This game is a simple game that is made with object oriented JavaScript that allows the character to maneuver via arrow keys and 
+This game is a simple game that is made with object oriented JavaScript.
 
 ## Dependencies
 
