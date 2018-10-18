@@ -8,7 +8,7 @@ To install on your computer you may clone or download this repo. Then launch the
 
 ## Dependencies
 
-Background images provided by [Subtle Backgrounds] (http://www.subtlebackgrounds.com) . Thanks to Matthew Cranford for his guidance from his Walkthrough blog.
+Background images provided by [Subtle Patterns] (https://www.toptal.com/designers/subtlepatterns/) . Thanks to Matthew Cranford for his guidance from his Walkthrough blog.
 
 ### How To Play
 
