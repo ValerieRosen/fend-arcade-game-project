@@ -2,9 +2,13 @@
 
 This game is a take on the classic Frogger arcade game that is made with object oriented JavaScript.
 
+## Installation
+
+To install on your computer you may clone or download this repo. Then launch the index.html file in your browser. 
+
 ## Dependencies
 
-Background images provided by [Subtle Backgrounds] (http://www.subtlebackgrounds.com) . Thanks to Matt Cranford for his guidance from his Walkthrough blog.
+Background images provided by [Subtle Backgrounds] (http://www.subtlebackgrounds.com) . Thanks to Matthew Cranford for his guidance from his Walkthrough blog.
 
 ### How To Play
 
